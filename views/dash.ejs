@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dashboard</title>
+  <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <style type="text/css">
+      body{
+        background-color: white;
+      }
+      h1{
+        color: black;
+      }
+    </style>
+</head>
+<body>
+
+	 <nav class="navbar navbar-inverse navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">PRIISH</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/about.html">About</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dashboard<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Profile</a></li>
+                <li><a href="/logout">Logout</a></li>
+              </ul>
+            </li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+	<%if (!data){%>
+  <div style="text-align: center;">
+    <h1>You have to wait!!!</h1>
+    <p style="color: blue;">You're account is being processed. Hit the refresh button for viewing changes.</p>
+    <a class="btn btn-primary btn-lg" href="/refresh" role="button" style="border-color: black; color: black; text-align: center;">Refresh</a></p>
+  </div>
+  <%} else{%>
+  <div style="text-align: center;">
+    <h1>You made it here!!!</h1>
+  </div>
+  <%}%>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
