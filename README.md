@@ -4,7 +4,8 @@ Created usign NodeJS express framework.
 
 # Execution
   a. Create a mysql database having username = root and password = root (or change it in index.js)
-     1. import the db.sql to create a database.
+     
+  1. Import the priish.sql to create a database. (priish here is the company name)
 
   b. Start with the server
 
