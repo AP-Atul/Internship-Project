@@ -23,5 +23,3 @@ Created usign NodeJS express framework.
 
   3. Go to localhost:8000/
     
-# License
-  [MIT](https://github.com/nishanths/license/blob/master/LICENSE)
