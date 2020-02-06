@@ -1,9 +1,9 @@
 # Internship-Project
 A website for the company I was an intern at.
-Created usign NodeJS express framework.
+Created using NodeJS express framework.
 
 # Execution
-  a. Create a mysql database having username = root and password = root (or change it in index.js)
+  a. Create a MySQL database having username = root and password = root (or change it in index.js)
      
   1. Import the priish.sql to create a database. (priish here is the company name)
 
